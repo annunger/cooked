@@ -1,12 +1,17 @@
 import './App.css'
+import Header from './components/Header.jsx'
+import Main from './components/Main.jsx'
+import Footer from './components/Footer.jsx'
+import RecipeCard from './components/RecipeCard.jsx'
 
 function App() {
   return (
     <>
-      <h1>Cooked</h1>
-      <p>Moje kuchařka</p>
+      <Header />
+      <Main />
+      <Footer />
     </>
-  )
+  );
 }
 
 export default App
