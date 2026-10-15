@@ -1,7 +1,7 @@
 /**
  * Displays detailed information about recipe.
  * 
- * @param {{ title: string, image: string, time: number, ingredients: string[], instructions: string }} props - recipe details data
+ * @param {{ title: string, image: string, time: number, ingredients: string[], instructions: string[] }} props - recipe details data
  * 
  */
 
@@ -21,7 +21,7 @@ function RecipeDetail(props) {
                 
                 <div className="ingredients-container">
                     <h3 className="content-heading">Ingredience:</h3>
-                    <ul>
+                    <ul className="ingredients-list">
                         {props.ingredients.map((ingredient) => (
                             <li key={ingredient}>{ingredient}</li>
                         ))}
@@ -30,7 +30,11 @@ function RecipeDetail(props) {
 
                 <div className="instructions-container">
                     <h3 className="content-heading">Postup:</h3>
-                    <p className="instructions">{props.instructions}</p>
+                    <ol className="instructions">
+                        {props.instructions.map((instruction) => (
+                            <li key={instruction}>{instruction}</li>
+                        ))}
+                    </ol>
                 </div>
             </div>
 
