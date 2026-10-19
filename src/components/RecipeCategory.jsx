@@ -14,10 +14,7 @@ function RecipeCategory(props) {
 
         <div className="recipes-container">
             {props.recipes.map((recipe) => (
-                <RecipeCard 
-                    key={recipe.id}
-                    {...recipe}
-                />
+                <RecipeCard key={recipe.id} {...recipe} onSelectRecipe={props.onSelectRecipe} />
             ))}
 
         </div>

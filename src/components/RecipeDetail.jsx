@@ -6,8 +6,6 @@
  */
 
 function RecipeDetail(props) {
-    
-    // bude se zobrazovat jako modální okno
 
     return (
         <article className="recipe-detail">
@@ -37,6 +35,7 @@ function RecipeDetail(props) {
                     </ol>
                 </div>
             </div>
+            <button type="button" aria-label="Zavřít detail receptu" className="close-recipe-detail" onClick={props.onClose}>x</button>
 
         </article>
     )

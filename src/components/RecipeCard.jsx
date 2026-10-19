@@ -18,7 +18,7 @@ function RecipeCard(props) {
             </div>
 
             <button type="button" aria-label="Přidat do oblíbených" className="favourite-recipe-button"></button>
-            <button type="button" aria-label="Zobrazit recept" className="">Zobrazit</button>
+            <button type="button" aria-label="Zobrazit recept" className="view-recipe-details" onClick={() => props.onSelectRecipe(props)}>Zobrazit</button>
         </article>
     )
 }
