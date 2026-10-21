@@ -1,11 +1,16 @@
 :root {
-  font-family: Arial, sans-serif;
-  color: #222;
-  background-color: #fff;
+  --color-primary: #FFFFFF;
+  --color-secondary: #000000;
+  --color-text: ;
+  --color-text-muted: ;
+  --color-border: ;
+  font-family: "Google Sans", sans-serif;
+  font-size: 16px;
 }
 
 body {
   margin: 0;
+  background: var(--color-primary);
 }
 
 * {

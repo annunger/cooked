@@ -20,9 +20,12 @@ function Main() {
            <div id="recipe-carousel" className="carousel">
                 <RecipeCategory name="Všechny recepty" recipes={[]} onSelectRecipe={handleSelectRecipe} />
                 <RecipeCategory name="Snídaně" recipes={[]} onSelectRecipe={handleSelectRecipe} />
+                <RecipeCategory name="Svačiny" recipes={[]} onSelectRecipe={handleSelectRecipe} />
                 <RecipeCategory name="Polévky" recipes={recipes} onSelectRecipe={handleSelectRecipe} />
-                <RecipeCategory name="Hlavní jídlo" recipes={[]} onSelectRecipe={handleSelectRecipe} />
+                <RecipeCategory name="Hlavní jídla" recipes={[]} onSelectRecipe={handleSelectRecipe} />
                 <RecipeCategory name="Dezerty" recipes={[]} onSelectRecipe={handleSelectRecipe} />
+                <RecipeCategory name="Pečivo" recipes={[]} onSelectRecipe={handleSelectRecipe} />
+                <RecipeCategory name="Nápoje" recipes={[]} onSelectRecipe={handleSelectRecipe} />
             </div> 
             <div id="popular-recipes-carousel" className="carousel">
                 {/* komponenta oblíbené kategorie */}
