@@ -1,7 +1,7 @@
 /* HEADER */
 
 header.site-header {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     right: 0;
@@ -99,6 +99,7 @@ a.list-item:hover {
 }
 
 a.favourites {
+    position: relative;
     justify-self: end;
     display: flex;
     align-items: center;
@@ -109,21 +110,112 @@ a.favourites {
 }
 
 img.favourites-icon {
-    width: 1.5rem;
-    height: 1.5rem;
-    filter: brightness(0);
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
 }
 
-a.favourites:hover {
-    opacity: 0.6;
+img.heart-filled {
+    opacity: 0;
 }
 
+.favourites:hover .heart-filled {
+    opacity: 1;
+}
 
+.favourites:hover .heart-outline {
+    opacity: 0;
+}
 
 /* MAIN */
+
+
+main {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0.25rem 0.8rem;
+  background-color: white;
+}
+
 
 /* RECIPE CATEGORY */
 
 /* RECIPE CARD */
 
+article.recipe-card {
+    position: relative;
+    width: 12rem;
+    aspect-ratio: 5 / 7;
+    overflow: hidden;
+    border-radius: 0.8rem;
+}
+
+img.recipe-card-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+div.content-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    inset: 0;
+    padding: 0.5rem 0.9rem;
+    box-shadow:
+        inset 0 35px 60px -10px rgb(0 0 0 / 70%),
+        inset 0 -35px 60px -10px rgb(0 0 0 / 70%);
+}
+
+h3.recipe-card-title { 
+    color: var(--color-primary);
+    font-size: 1rem;
+}
+
+button.add-to-favourites {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 3;
+    padding: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+img.add-to-favourites-icon {
+    position: absolute;
+    inset: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    filter: invert(1);
+}
+
+img.add-heart-filled {
+    opacity: 0;
+}
+
+.add-to-favourites:hover .add-heart-filled {
+    opacity: 1;
+}
+
+.add-to-favourites:hover .add-heart-outline {
+    opacity: 0;
+}
+
+button.view-recipe-details {
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
 /* RECIPE DETAIL / MODAL */
+
+/* FOOTER */
+

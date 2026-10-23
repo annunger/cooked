@@ -1,3 +1,6 @@
+import heartOutline from "../assets/heart-icon.svg";
+import heartFilled from "../assets/filled-heart-icon.svg";
+
 /**
  * Displays a preview card for a recipe.
  * 
@@ -8,17 +11,15 @@ function RecipeCard(props) {
 
     return (
         <article className="recipe-card">
-            <div className="image-container">
                 <img src={props.image} alt={props.title} className="recipe-card-image"/>
-            </div>
-
-            <div className="recipe-card-info">
+            <div className="content-container">
                 <h3 className="recipe-card-title">{props.title}</h3>
-                <p className="recipe-card-time">{props.time} min</p>
+                <button type="button" className="add-to-favourites" aria-label="Přidat do oblíbených">
+                    <img src={heartOutline} className="add-to-favourites-icon add-heart-outline" alt="" />
+                    <img src={heartFilled} className="add-to-favourites-icon add-heart-filled" alt="" />
+                </button>
+                <button type="button" aria-label={`Zobrazit recept: ${props.title}`} className="view-recipe-details" onClick={() => props.onSelectRecipe(props)}></button>
             </div>
-
-            <button type="button" aria-label="Přidat do oblíbených" className="favourite-recipe-button"></button>
-            <button type="button" aria-label="Zobrazit recept" className="view-recipe-details" onClick={() => props.onSelectRecipe(props)}>Zobrazit</button>
         </article>
     )
 }

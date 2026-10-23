@@ -1,5 +1,6 @@
 import searchIcon from "../assets/search-icon.svg";
-import heartIcon from "../assets/heart-icon.svg";
+import heartOutline from "../assets/heart-icon.svg";
+import heartFilled from "../assets/filled-heart-icon.svg";
 
 function Header() {
 
@@ -14,7 +15,10 @@ function Header() {
                         <input type="search" id="search-input" placeholder="vyhledat recept"/>
                     </div>
                 </form>
-                <a href="" className="favourites" aria-label="Oblíbené recepty"><img src={heartIcon} className="favourites-icon" alt=""></img></a>
+                <a href="" className="favourites" aria-label="Oblíbené recepty">
+                    <img src={heartOutline} className="favourites-icon heart-outline" alt="" />
+                    <img src={heartFilled} className="favourites-icon heart-filled" alt="" />
+                </a>
             </div>
 
             <nav className="categories-container" aria-label="Kategorie receptů">
