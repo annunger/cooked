@@ -12,11 +12,13 @@ export const recipes = [
                         "200 ml smetany na šlehání (33 %)", 
                         "1 lžička kari", 
                         "špetka kajenského pepře", 
-                        "sůl a pepř" ],
+                        "sůl a pepř" 
+                    ],
         instructions: [ "Mrkev nakrájíme na kolečka a cibuli najemno. Do hrnce dáme na střední plamen opékat mrkev a mezitím si oloupeme dýni. Vydlabeme z ní semínka a nakrájíme ji na malé kousky.", 
                         "Jakmile začne mrkev zlátnout, přidáme cibuli. Když zezlátne i cibule, přidáme do hrnce dýni, zázvor, česnek, kari, kajenský pepř, lžičku soli a špetku pepře.", 
                         "Vše zalijeme cca 1,5 litrem vody a vaříme 20-30 minut, dokud dýně nezměkne.",
-                        "Polévku potom rozmixujeme tyčovým mixérem dohladka, přidáme smetanu, zamícháme a ještě chvíli povaříme." ],
+                        "Polévku potom rozmixujeme tyčovým mixérem dohladka, přidáme smetanu, zamícháme a ještě chvíli povaříme." 
+                    ],
         source: "www.mycookingdiary.cz",
     },
     {
@@ -34,15 +36,17 @@ export const recipes = [
                         "150 ml smetany ke šlehání (33%)", 
                         "1 lžíce mleté papriky", 
                         "sáček s kořením na vývar", 
-                        "sůl a pepř"],
+                        "sůl a pepř"
+                    ],
         instructions: [ "Maso si očistíme. Mrkev, cibuli a papriku nakrájíme na kousky. Na oleji v hrnci nejdřív opečeme mrkev, poté přidáme cibuli a opékáme dozlatova. Nakonec přidáme papriku a opékáme další cca 2 minuty.", 
                         "Pak přidáme kuřecí prsa a zalejeme vše cca 1,2 litrem vody. Přidáme lžíci mleté papriky, sáček s kořením na vývar, lžičku soli a pepř.", 
                         "Zamícháme a vaříme, dokud maso nezměkne.",
                         "Mezitím si připravíme jíšku. Na pánvi na středním ohni rozehřejeme máslo, přidáme k němu hladkou mouku a za stálého míchání opékáme přibližně 10 minut na mírném plameni.", 
                         "Z omáčky vyndáme maso na talíř, přidáme jíšku a rozmixujeme tyčovým mixérem.", 
                         "Do omáčky přidáme smetanu. Její množství můžeme upravit podle chuti a hustoty omáčky.", 
-                        "Dochutíme podle potřeby.", "Omáčku podáváme s nakrájeným kuřecím masem a těstovinami nebo houskovým knedlíkem."],
-        source: "Naše - Kateřina Kuranova",
+                        "Dochutíme podle potřeby.", "Omáčku podáváme s nakrájeným kuřecím masem a těstovinami nebo houskovým knedlíkem."
+                    ],
+        source: "Kateřina Kuranova - Naše",
     },
     {
         id: 3,
@@ -58,14 +62,201 @@ export const recipes = [
                         "300 g pšeničné celozrnné mouky",
                         "1,5 lžičky prášku do pečiva",
                         "špetka soli",
-                        "hrst nasekaných ořechů"],
+                        "hrst nasekaných ořechů"
+                    ],
         instructions: [ "Předehřejeme troubu na 175 °C. Formu na clebíček vymažeme máslem nebo vyložím pečícím papírem.",
                         "Ve velké mixovací nádobě vyšleháme změklé máslo spolu s cukrem.", 
                         "Když je směs nadýchaná, přidáme gervais nebo tvaroh, vejce, rozmačkané banány a lehce promícháme.",
                         "Ve druhé míse si připravíme všechny suché ingredience a dobře je promícháme, tedy mouku, prášek do pečiva a špetku soli.",
                         "Poté krátce promícháme obě směsi dohromady.",
-                        "Těsto nalijeme do formy, posypeme nasekanými ořechy a vložíme do trouby. Chlebíček pečeme přibližně 60 minut. Že je hotový poznáme tak, že, když do něj zapíchneme špejli, těsto se na ní nelepí." ],
+                        "Těsto nalijeme do formy, posypeme nasekanými ořechy a vložíme do trouby. Chlebíček pečeme přibližně 60 minut. Že je hotový poznáme tak, že, když do něj zapíchneme špejli, těsto se na ní nelepí." 
+                    ],
         source: "www.kitchenette.cz",
+    },
+    {
+        id: "4",
+        title: "Spaghetti bolognese",
+        category: "Hlavní jídla",
+        time: "120",
+        image: "/images/spaghetti-bolognese.jpg",
+        ingredients: [
+            "1 větší mrkev",
+            "1 řapík celeru",
+            "1 cibule",
+            "2 stroužky česneku",
+            "100 g slaniny",
+            "cca 400 g mletého vepřového masa",
+            "cca 400 g mletého hovězího masa",
+            "1 lžička třtinového cukru",
+            "2 lžíce rajského protlaku",
+            "800 g rajčat v plechovce",
+            "100 ml mléka",
+            "2 bobkové listy",
+            "1 lžička oregana",
+            "sůl a pepř",
+        ],
+        instructions: [
+            "Mrkev, celer, cibuli a slaninu nakrájíme nadrobno.",
+            "Na středním plameni nejdříve opečeme slaninu a postupně přidáváme mrkev, celer, cibuli a vše opékáme dozlatova.",
+            "Do hrnce vložíme mleté maso, opékáme ho a vařečkou rozdělujeme na malé kousky.",
+            "Když se maso zatáhne a začne hnědnout, tj. přibližně po 15-20 minutách, přidáme rajský protlak, rajčata z plechovky, prolisovaný nebo nadrobno nakrájený česnek, bobkové listy, oregano, cukr, malou lžičku soli a pepř.",
+            "Za občasného míchání vaříme na mírném ohni alespoň hodinu a půl. Ke konci přidáme mléko a zamícháme.",
+            "Podáváme s uvařenými těstovinami a posypané parmezánem.",
+        ],
+        source: "Kateřina Kuranova - Naše",
+        },
+        {
+        id: "5",
+        title: "Spaghetti carbonara",
+        category: "Hlavní jídla",
+        time: "",
+        image: "/images/spaghetti-carbonara.jpg",
+        ingredients: [
+            "250 g špaget",
+            "2 žloutky",
+            "100 g slaniny",
+            "parmezán",
+            "sůl a pepř"
+        ],
+        instructions: [
+            "V osolené vodě uvaříme špagety al dente. Mezitím v hluboké pánvi opečeme slaninu dokřupava.",
+            "Ztlumíme oheň a do pánve přilijeme naběračku vody z těstovin. Těstoviny scedíme a přidáme do pánve.",
+            "Oddělíme žloutky od bílků. Žloutky osolíme, opepříme a můžeme do nich přidat trochu parmezánu. Pánev s těstovinami úplně odstavíme z plotýnky.",
+            "Do těstovin přimícháme žloutky, aby vznikla hladká emulze. Jídlo už nevaříme, jinak by se žloutky mohly srazit.",
+            "Podle chuti osolíme a opepříme a podáváme posypané parmezánem."
+        ],
+        source: "Emanuele Ridi",
+        },
+        {
+        id: "6",
+        title: "Tiramisu",
+        category: "Dezerty",
+        time: "30",
+        image: "/images/tiramisu.jpg",
+        ingredients: [
+            "5 vajec",
+            "5 lžic třtinového cukru",
+            "500 g mascarpone",
+            "400 g piškotů Savoiardi",
+            "1 velká silná káva",
+            "2-3 lžíce amaretta",
+            "kakao"
+        ],
+        instructions: [
+            "Mascarpone vyndáme z lednice, aby získalo pokojovou teplotu. Příliš studené mascarpone by mohlo v krému vytvořit hrudky.",
+            "Do dvou mís oddělíme žloutky od bílků.",
+            "Z bílků vyšleháme tuhý sníh.",
+            "Ke žloutkům přidáme cukr a společně vyšleháme do pěny. Jemně vmícháme mascarpone a potom krátce sníh.",
+            "Uvaříme velkou silnou kávu, kterou můžeme trochu naředit vodou. Přilijeme amaretto a zamícháme.",
+            "Piškoty krátce namočíme z obou stran do směsi kávy a amaretta a vyrovnáme je do formy.",
+            "Na vrstvu piškotů naneseme vrstvu krému, pak přidáme další vrstvu piškotů a znovu krém. Povrch posypeme kakaem přes sítko, aby se z kakaa nevytvořily hrudky.",
+            "Tiramisu necháme v lednici odležet minimálně 3 hodiny."
+        ],
+        source: "Emanuele Ridi"
+    },
+    {
+        id: "7",
+        title: "Vajíčková pomazánka",
+        category: "Svačiny",
+        time: "20",
+        image: "/images/vajickova-pomazanka.jpg",
+        ingredients: [
+            "6 vajec",
+            "180 g měkkého tvarohu",
+            "1,5 lžíce majonézy",
+            "1,5 lžičky hořčice",
+            "½ cibule",
+            "sůl a pepř",
+            "pečivo k podávání",
+            "pažitka, petrželka nebo ředkvičky na ozdobu"
+        ],
+        instructions: [
+            "Vejce uvaříme natvrdo, oloupeme a nakrájíme na kostičky.",
+            "Mezitím smícháme tvaroh, majonézu, hořčici a jemně nasekanou cibuli.",
+            "Do směsi opatrně vmícháme nakrájená vejce. Podle chuti osolíme a opepříme.",
+            "Pomazánku namažeme na pečivo a můžeme ozdobit pažitkou, petrželkou nebo ředkvičkami."
+        ],
+        source: ""
+    },
+    {
+        id: "8",
+        title: "Třená bábovka",
+        category: "Dezerty",
+        time: "70",
+        image: "/images/trena-babovka.jpg",
+        ingredients: [
+            "125 g másla + máslo na vymazání formy",
+            "150 g cukru",
+            "3 vejce",
+            "225 g špaldové mouky + mouka na vysypání formy",
+            "1 vanilkový pudink",
+            "½ sáčku prášku do pečiva",
+            "1 lžíce kakaa",
+            "250 ml mléka",
+            "citronová kůra",
+            "špetka soli"
+        ],
+        instructions: [
+            "Troubu předehřejeme na 180 °C. Formu vymažeme máslem a vysypeme moukou, aby se k ní těsto při pečení nepřilepilo.",
+            "Oddělíme žloutky od bílků a z bílků vyšleháme pevný sníh.",
+            "Poté utřeme žloutky s cukrem do pěny. Přidáme máslo a znovu vyšleháme.",
+            "Mouku smícháme s pudinkem, práškem do pečiva, špetkou soli a citronovou kůrou. Směs spolu s mlékem přimícháme ke žloutkům, máslu a cukru. Když je těsto hladké, jemně do něj vařečkou vmícháme sníh z bílků.",
+            "Zhruba dvě třetiny těsta nalijeme do formy a rozetřeme k okrajům. Do zbylého těsta přimícháme kakao a přidáme ho do formy.",
+            "Pečeme přibližně 50–60 minut. Bábovka je hotová, když do ní zapíchneme špejli a těsto se na ni nelepí."
+        ],
+        source: ""
+    },
+    {
+        id: "9",
+        title: "Čočka na kyselo",
+        category: "Hlavní jídla",
+        time: "30",
+        image: "/images/cocka-na-kyselo.jpg",
+        ingredients: [
+            "250 g čočky",
+            "1 lžíce špaldové mouky",
+            "1 cibule",
+            "2 stroužky česneku",
+            "2 lžíce octa",
+            "2 lžíce cukru",
+            "1 lžička majoránky",
+            "sůl a pepř",
+            "olej nebo máslo na opečení",
+            "vejce, párky a kyselé okurky k podávání"
+        ],
+        instructions: [
+            "Čočku propláchneme a ideálně ji necháme alespoň 2 hodiny odstát ve vodě. Poté ji osolíme a uvaříme doměkka.",
+            "V jiném hrnci mezitím necháme na oleji nebo másle zezlátnout cibuli. Jakmile je hotová, stáhneme plamen, zaprášíme ji moukou a pár minut mícháme.",
+            "Do hrnce přilijeme vodu z uvařené čočky, kterou můžeme přecedit rovnou do hrnce. Chvíli promícháme a poté přidáme i samotnou čočku.",
+            "Dochutíme octem, cukrem, česnekem, majoránkou, solí a pepřem. Vše vaříme přibližně 15–20 minut a občas promícháme, aby se čočka nepřipalovala.",
+            "Nakonec podle potřeby dochutíme. Podáváme s vejcem, párky a kyselými okurkami."
+        ],
+        source: "Roman Vaněk, Jana Vaňková - Velká kuchařka Čech a Moravy"
+    },
+    {
+        id: "10",
+        title: "Pečené kuře s rýží",
+        category: "Hlavní jídla",
+        time: "60",
+        image: "/images/pecene-kure-s-ryzi.jpg",
+        ingredients: [
+            "1 celé kuře nebo 4 kuřecí stehna",
+            "1 hrnek rýže",
+            "1 cibule",
+            "2 stroužky česneku",
+            "1 lžíce mleté papriky",
+            "1 lžička oregana",
+            "sůl a pepř",
+            "olej"
+        ],
+        instructions: [
+            "Kuře vykostíme. Stehna a prsa v míse promícháme se lžičkou soli, mletou paprikou, oreganem, pepřem a olejem.",
+            "Na velké pánvi vhodné do trouby osmahneme maso, aby se zatáhlo a zezlátlo. Podle potřeby přidáme olej.",
+            "Maso dáme stranou a ve stejné pánvi osmažíme cibuli dozlatova. Přidáme česnek a necháme ho rozvonět.",
+            "Přidáme hrnek rýže, dva hrnky vody a lžičku soli. Zamícháme, chvíli povaříme a na rýži položíme maso. Pánev přiklopíme pokličkou a vložíme do trouby.",
+            "Pečeme přibližně 35 minut při 200 °C."
+        ],
+        source: "Facebook"
     },
 ]
 

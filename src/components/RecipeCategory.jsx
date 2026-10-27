@@ -12,13 +12,9 @@ function RecipeCategory(props) {
         <section className="recipe-category">
             <h2 className="category-title">{props.name}</h2>
 
-        <div className="recipes-container">
             {props.recipes.map((recipe) => (
                 <RecipeCard key={recipe.id} {...recipe} onSelectRecipe={props.onSelectRecipe} />
             ))}
-
-        </div>
-
         </section>
     )
 }

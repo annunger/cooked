@@ -147,7 +147,17 @@ main {
 
 /* RECIPE CATEGORY */
 
+section.recipe-category {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 12rem);
+    justify-content: center;
+    gap: 1rem;
+}
 
+h2.category-title {
+    grid-column: 1 / -1;
+    margin: 1.5rem 0 0 0;
+}
 
 /* RECIPE CARD */
 
@@ -228,3 +238,6 @@ button.view-recipe-details {
 
 /* FOOTER */
 
+footer {
+    display: none;
+}
