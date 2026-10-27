@@ -2,7 +2,7 @@ import searchIcon from "../assets/search-icon.svg";
 import heartOutline from "../assets/heart-icon.svg";
 import heartFilled from "../assets/filled-heart-icon.svg";
 
-function Header() {
+function Header(props) {
 
     return (
         <header className="site-header">
@@ -23,14 +23,110 @@ function Header() {
 
             <nav className="categories-container" aria-label="Kategorie receptů">
                 <ul className="list-container">
-                    <li><a href="#all" className="list-item">Všechny recepty</a></li>
-                    <li><a href="#breakfast" className="list-item">Snídaně</a></li>
-                    <li><a href="#snacks" className="list-item">Svačiny</a></li>
-                    <li><a href="#soups" className="list-item">Polévky</a></li>
-                    <li><a href="#lunches" className="list-item">Hlavní jídla</a></li>
-                    <li><a href="#desserts" className="list-item">Dezerty</a></li>
-                    <li><a href="#bread" className="list-item">Pečivo</a></li>
-                    <li><a href="#drinks" className="list-item">Nápoje</a></li>
+                    <li>
+                        <button 
+                            type="button" 
+                            className={
+                                props.selectedCategory === "Všechny recepty" 
+                                ? "list-item-active"
+                                : "list-item" 
+                            }
+                            onClick={() => props.onSelectedCategory("Všechny recepty")}
+                        >
+                            Všechny recepty
+                        </button>
+                    </li>
+                    <li>
+                        <button 
+                            type="button" 
+                            className={
+                                props.selectedCategory === "Snídaně"
+                                ? "list-item-active"
+                                : "list-item"
+                            }    
+                            onClick={() => props.onSelectedCategory("Snídaně")}
+                        >
+                            Snídaně
+                        </button>
+                    </li>
+                    <li>
+                        <button 
+                            type="button" 
+                            className={
+                                props.selectedCategory === "Svačiny"
+                                ? "list-item-active"
+                                : "list-item"
+                            }
+                            onClick={() => props.onSelectedCategory("Svačiny")}
+                        >
+                            Svačiny
+                        </button>
+                    </li>
+                    <li>
+                        <button 
+                            type="button" 
+                            className={
+                                props.selectedCategory === "Polévky"
+                                ? "list-item-active"
+                                : "list-item"
+                            }
+                            onClick={() => props.onSelectedCategory("Polévky")}
+                        >
+                            Polévky
+                        </button>
+                    </li>
+                    <li>
+                        <button 
+                            type="button" 
+                            className={
+                                props.selectedCategory === "Hlavní jídla"
+                                ? "list-item-active"
+                                :"list-item"
+                            }
+                            onClick={() => props.onSelectedCategory("Hlavní jídla")}
+                        >
+                            Hlavní jídla
+                        </button>
+                    </li>
+                    <li>
+                        <button 
+                            type="button" 
+                            className={
+                                props.selectedCategory === "Dezerty"
+                                ? "list-item-active"
+                                : "list-item" 
+                            }
+                            onClick={() => props.onSelectedCategory("Dezerty")}
+                        >
+                            Dezerty
+                        </button>
+                    </li>
+                    <li>
+                        <button 
+                            type="button" 
+                            className={
+                                props.selectedCategory === "Pečivo"
+                                ? "list-item-active"
+                                : "list-item" 
+                            }
+                            onClick={() => props.onSelectedCategory("Pečivo")}
+                        >
+                            Pečivo
+                        </button>
+                    </li>
+                    <li>
+                        <button 
+                            type="button" 
+                            className={
+                                props.selectedCategory === "Nápoje"
+                                ? "list-item-active"
+                                : "list-item"
+                            }
+                            onClick={() => props.onSelectedCategory("Nápoje")}
+                        >
+                            Nápoje
+                        </button>
+                    </li>
                 </ul>
             </nav>
             

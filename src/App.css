@@ -12,7 +12,7 @@ header.site-header {
 
 div.header-top-container {
     display: grid;
-    padding:  0 6rem 0 1rem;
+    padding:  0 1rem;
     margin: 0;
     grid-template-columns: 1fr 3fr 1fr;
     align-items: center;
@@ -86,13 +86,20 @@ ul.list-container {
     list-style: none;
 }
 
-a.list-item {
-    font-size: 14px;
+button.list-item {
+    font-size: 0.9rem;
     color: var(--color-secondary);
-    text-decoration: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
 }
 
-a.list-item:hover {
+button.list-item:hover,
+button.list-item-active {
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+    background-color: transparent;
+    border: none;
     text-shadow: 0.3px 0 currentColor, -0.3px 0 currentColor;
     text-decoration: underline;
     text-underline-offset: 0.55em;
@@ -139,6 +146,8 @@ main {
 
 
 /* RECIPE CATEGORY */
+
+
 
 /* RECIPE CARD */
 

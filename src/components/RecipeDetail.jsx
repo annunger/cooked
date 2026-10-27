@@ -1,7 +1,7 @@
 /**
  * Displays detailed information about recipe.
  * 
- * @param {{ title: string, image: string, time: number, ingredients: string[], instructions: string[] }} props - recipe details data
+ * @param {{ title: string, image: string, time: number, ingredients: string[], instructions: string[], source: string }} props - recipe details data
  * 
  */
 
@@ -15,6 +15,7 @@ function RecipeDetail(props) {
                 </div>
 
                 <div className="recipe-detail-info">
+
                     <h2 className="recipe-detail-title">{props.title}</h2>
                     <p className="recipe-detail-time">{props.time} min</p>
                     
@@ -35,6 +36,9 @@ function RecipeDetail(props) {
                             ))}
                         </ol>
                     </div>
+
+                    <p className="recipe-source">Zdroj: {props.source}</p>
+
                 </div>
 
                 <button type="button" aria-label="Zavřít detail receptu" className="close-recipe-detail" onClick={props.onClose}>x</button>
