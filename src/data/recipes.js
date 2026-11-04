@@ -109,7 +109,7 @@ export const recipes = [
         id: "5",
         title: "Spaghetti carbonara",
         category: "Hlavní jídla",
-        time: "",
+        time: "20",
         image: "/images/spaghetti-carbonara.jpg",
         ingredients: [
             "250 g špaget",
@@ -256,7 +256,7 @@ export const recipes = [
             "Přidáme hrnek rýže, dva hrnky vody a lžičku soli. Zamícháme, chvíli povaříme a na rýži položíme maso. Pánev přiklopíme pokličkou a vložíme do trouby.",
             "Pečeme přibližně 35 minut při 200 °C."
         ],
-        source: "Facebook"
+        source: ""
     },
 ]
 

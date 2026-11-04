@@ -54,22 +54,12 @@ function Main(props) {
                         recipes={recipes.filter((recipe) => recipe.category === "Dezerty")}
                         onSelectRecipe={handleSelectRecipe} />
                 )}
-                {props.selectedCategory === "Pečivo" && (
-                    <RecipeCategory 
-                        name="Pečivo" 
-                        recipes={recipes.filter((recipe) => recipe.category === "Pečivo")} 
-                        onSelectRecipe={handleSelectRecipe} />
-                )}
-                {props.selectedCategory === "Nápoje" && (
-                    <RecipeCategory 
-                        name="Nápoje" 
-                        recipes={recipes.filter((recipe) => recipe.category === "Nápoje")} 
-                        onSelectRecipe={handleSelectRecipe} />
-                )}
             </div> 
+
             <div id="popular-recipes-carousel" className="carousel">
                 {/* komponenta oblíbené kategorie */}
             </div>
+
             {selectedRecipe && <RecipeDetail {...selectedRecipe} onClose={handleCloseRecipe} />}
         </main>
     )

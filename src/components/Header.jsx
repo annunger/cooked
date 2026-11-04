@@ -101,32 +101,6 @@ function Header(props) {
                             Dezerty
                         </button>
                     </li>
-                    <li>
-                        <button 
-                            type="button" 
-                            className={
-                                props.selectedCategory === "Pečivo"
-                                ? "list-item-active"
-                                : "list-item" 
-                            }
-                            onClick={() => props.onSelectedCategory("Pečivo")}
-                        >
-                            Pečivo
-                        </button>
-                    </li>
-                    <li>
-                        <button 
-                            type="button" 
-                            className={
-                                props.selectedCategory === "Nápoje"
-                                ? "list-item-active"
-                                : "list-item"
-                            }
-                            onClick={() => props.onSelectedCategory("Nápoje")}
-                        >
-                            Nápoje
-                        </button>
-                    </li>
                 </ul>
             </nav>
             

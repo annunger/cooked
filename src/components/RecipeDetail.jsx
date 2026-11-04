@@ -1,3 +1,5 @@
+import closeIcon from "../assets/close-icon.svg";
+
 /**
  * Displays detailed information about recipe.
  * 
@@ -9,40 +11,46 @@ function RecipeDetail(props) {
 
     return (
         <div className="modal-overlay">
-            <article className="recipe-detail">
-                <div className="image-container">
-                    <img src={props.image} alt={props.title} className="recipe-detail-image"/>
-                </div>
+            <article 
+                className="recipe-detail" 
+                style={{ 
+                    backgroundImage: ` linear-gradient(rgb(0 0 0 / 70%), rgb(0 0 0 / 70%) ),
+                                       url("${props.image}")`
+                    }}>
 
                 <div className="recipe-detail-info">
-
+                    
                     <h2 className="recipe-detail-title">{props.title}</h2>
                     <p className="recipe-detail-time">{props.time} min</p>
-                    
-                    <div className="ingredients-container">
-                        <h3 className="content-heading">Ingredience:</h3>
-                        <ul className="ingredients-list">
-                            {props.ingredients.map((ingredient) => (
-                                <li key={ingredient}>{ingredient}</li>
-                            ))}
-                        </ul>
+
+                    <button type="button" aria-label="Zavřít detail receptu" className="close-recipe-detail" onClick={props.onClose}>
+                            <img src={closeIcon} className="close-icon"></img>
+                        </button>
+
+                    <div className="ingredients-instruction-container">
+                        
+                        <div className="ingredients-container">
+                            <h3 className="content-heading">Ingredience:</h3>
+                            <ul className="ingredients-list">
+                                {props.ingredients.map((ingredient) => (
+                                    <li key={ingredient}>{ingredient}</li>
+                                ))}
+                            </ul>
+                        </div>
+
+                        <div className="instructions-container">
+                            <h3 className="content-heading">Postup:</h3>
+                            <ol className="instructions">
+                                {props.instructions.map((instruction) => (
+                                    <li key={instruction}>{instruction}</li>
+                                ))}
+                            </ol>
+                        </div>
                     </div>
 
-                    <div className="instructions-container">
-                        <h3 className="content-heading">Postup:</h3>
-                        <ol className="instructions">
-                            {props.instructions.map((instruction) => (
-                                <li key={instruction}>{instruction}</li>
-                            ))}
-                        </ol>
-                    </div>
-
-                    <p className="recipe-source">Zdroj: {props.source}</p>
-
+                    <p className="recipe-source">zdroj: {props.source}</p>
                 </div>
 
-                <button type="button" aria-label="Zavřít detail receptu" className="close-recipe-detail" onClick={props.onClose}>x</button>
- 
         </article>
     </div>
     )
