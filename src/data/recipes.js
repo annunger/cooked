@@ -25,6 +25,7 @@ export const recipes = [
         id: 2,
         title: "Kuře na paprice",
         category: "Hlavní jídla",
+        subcategory: ["Drůbeží maso"],
         time: 60,
         image: "/images/kure-na-paprice.jpg",
         ingredients: [  "cca 600 g kuřecích prsou", 
@@ -77,6 +78,7 @@ export const recipes = [
         id: "4",
         title: "Spaghetti bolognese",
         category: "Hlavní jídla",
+        subcategory: ["Hovězí maso", "Vepřové maso"],
         time: "120",
         image: "/images/spaghetti-bolognese.jpg",
         ingredients: [
@@ -109,6 +111,7 @@ export const recipes = [
         id: "5",
         title: "Spaghetti carbonara",
         category: "Hlavní jídla",
+        subcategory: ["Vepřové maso"],
         time: "20",
         image: "/images/spaghetti-carbonara.jpg",
         ingredients: [
@@ -176,7 +179,6 @@ export const recipes = [
             "Do směsi opatrně vmícháme nakrájená vejce. Podle chuti osolíme a opepříme.",
             "Pomazánku namažeme na pečivo a můžeme ozdobit pažitkou, petrželkou nebo ředkvičkami."
         ],
-        source: ""
     },
     {
         id: "8",
@@ -204,12 +206,12 @@ export const recipes = [
             "Zhruba dvě třetiny těsta nalijeme do formy a rozetřeme k okrajům. Do zbylého těsta přimícháme kakao a přidáme ho do formy.",
             "Pečeme přibližně 50–60 minut. Bábovka je hotová, když do ní zapíchneme špejli a těsto se na ni nelepí."
         ],
-        source: ""
     },
     {
         id: "9",
         title: "Čočka na kyselo",
         category: "Hlavní jídla",
+        subcategory: ["Vegetariánská jídla"],
         time: "30",
         image: "/images/cocka-na-kyselo.jpg",
         ingredients: [
@@ -237,6 +239,7 @@ export const recipes = [
         id: "10",
         title: "Pečené kuře s rýží",
         category: "Hlavní jídla",
+        subcategory: ["Drůbeží maso"],
         time: "60",
         image: "/images/pecene-kure-s-ryzi.jpg",
         ingredients: [
@@ -256,7 +259,6 @@ export const recipes = [
             "Přidáme hrnek rýže, dva hrnky vody a lžičku soli. Zamícháme, chvíli povaříme a na rýži položíme maso. Pánev přiklopíme pokličkou a vložíme do trouby.",
             "Pečeme přibližně 35 minut při 200 °C."
         ],
-        source: ""
     },
 ]
 

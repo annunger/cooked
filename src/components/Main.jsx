@@ -20,37 +20,39 @@ function Main(props) {
            <div id="recipe-carousel" className="carousel">
                 {props.selectedCategory === "Všechny recepty" && (
                     <RecipeCategory 
-                        name="Všechny recepty" 
+                        category="Všechny recepty" 
                         recipes={recipes} 
                         onSelectRecipe={handleSelectRecipe} />
                 )}
                 {props.selectedCategory === "Snídaně" && (
                     <RecipeCategory    
-                        name="Snídaně" 
+                        category="Snídaně" 
                         recipes={recipes.filter((recipe) => recipe.category === "Snídaně")} 
                         onSelectRecipe={handleSelectRecipe} />
                 )}
                 {props.selectedCategory === "Svačiny" && (
                     <RecipeCategory 
-                        name="Svačiny" 
+                        category="Svačiny" 
                         recipes={recipes.filter((recipe) => recipe.category === "Svačiny")} 
                         onSelectRecipe={handleSelectRecipe} />
                 )}
                 {props.selectedCategory === "Polévky" && (
                     <RecipeCategory 
-                        name="Polévky" 
+                        category="Polévky" 
                         recipes={recipes.filter((recipe) => recipe.category === "Polévky")}
                         onSelectRecipe={handleSelectRecipe} />  
                 )}
                 {props.selectedCategory === "Hlavní jídla" && (
                     <RecipeCategory 
-                        name="Hlavní jídla" 
+                        category="Hlavní jídla" 
                         recipes={recipes.filter((recipe) => recipe.category === "Hlavní jídla")} 
-                        onSelectRecipe={handleSelectRecipe} />
+                        onSelectRecipe={handleSelectRecipe}
+                        selectedSubcategory={props.selectedSubcategory}
+                        onSelectedSubcategory={props.onSelectedSubcategory} />
                 )}
                 {props.selectedCategory === "Dezerty" && (
                     <RecipeCategory 
-                        name="Dezerty" 
+                        category="Dezerty" 
                         recipes={recipes.filter((recipe) => recipe.category === "Dezerty")}
                         onSelectRecipe={handleSelectRecipe} />
                 )}

@@ -10,12 +10,25 @@ function App() {
 
   function handleSelectedCategory (category) {
     setSelectedCategory(category)
+    setSelectedSubcategory(null)
+  }
+
+  const [selectedSubcategory, setSelectedSubcategory] = useState(null)
+
+  function handleSelectedSubcategory (subcategory) {
+    setSelectedSubcategory(subcategory)
   }
 
   return (
     <>
-      <Header onSelectedCategory={handleSelectedCategory} selectedCategory={selectedCategory}/>
-      <Main selectedCategory={selectedCategory} />
+      <Header 
+        onSelectedCategory={handleSelectedCategory} 
+        selectedCategory={selectedCategory} 
+      />
+      <Main 
+        selectedCategory={selectedCategory} 
+        onSelectedSubcategory={handleSelectedSubcategory}
+        selectedSubcategory={selectedSubcategory}/>
       <Footer />
     </>
   );

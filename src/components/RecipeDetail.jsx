@@ -25,7 +25,7 @@ function RecipeDetail(props) {
 
                     <button type="button" aria-label="Zavřít detail receptu" className="close-recipe-detail" onClick={props.onClose}>
                             <img src={closeIcon} className="close-icon"></img>
-                        </button>
+                    </button>
 
                     <div className="ingredients-instruction-container">
                         
@@ -48,7 +48,9 @@ function RecipeDetail(props) {
                         </div>
                     </div>
 
+                    {props.source && (
                     <p className="recipe-source">zdroj: {props.source}</p>
+                    )}
                 </div>
 
         </article>
